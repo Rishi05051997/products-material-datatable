@@ -1,0 +1,32 @@
+table {
+  margin: 10px auto;
+  width: 80%;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  color: darkblue;
+}
+
+.example-container {
+  position: relative;
+  margin: 20px;
+}
+
+.example-table-container {
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+}
+
+/* Column Widths */
+
+/* .mat-column-id,
+.mat-column-rating {
+  max-width: 64px;
+}
+
+.mat-column-name {
+  max-width: 124px;
+} */
