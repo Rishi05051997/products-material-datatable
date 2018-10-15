@@ -1,12 +1,22 @@
 <div class="example-container mat-elevation-z8">
   <h2>Products</h2>
 
-  <div class="loading-container" *ngIf="dataSource.loading$ | async">
-    LOADING PRODUCTS
-  </div>
-
   <div class="example-table-container" *ngIf="dataSource">
-
+    <!-- PURE CSS LOADING ICON -->
+    <div class="loading-container" *ngIf="dataSource.$loading | async">
+      <div class="lds-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- ANGULAR MATERIAL TABLE -->
     <table mat-table [dataSource]="dataSource" class="example-table">
       <!-- Product ID Column -->
       <ng-container matColumnDef="id">
